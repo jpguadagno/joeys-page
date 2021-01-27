@@ -1,11 +1,22 @@
+<!-- Hi, welcome to my website. I built it myself.
+You can do a lot with html and css, and the basics are easy to learn. 
+w3schools.com is a good place to start, but here's a breakdown of my site. -->
+
 <!doctype html>
 <html>
 <head>
-	
 <meta charset="utf-8">
 <title>Joey's Page</title>
 	
-<style>
+<!-- Above is stuff to set up your html file as an html file.
+"title" is where you put the name of your site (for browser tabs) -->
+	
+<!-- Below contains CSS. Most websites will have a separate file for CSS,
+but a very basic site like this can include it in the "head" section. -->
+	
+<!-- The code below simply defines how links appear on my page. -->
+	
+<style>	
 a:link {
   color: white;
   background-color: transparent;
@@ -30,17 +41,38 @@ a:active {
 	
 </head>
 	
+<!-- The "body" section is what you actually see on your page.
+"style" here will set the default look for your entire page. -->
+	
 <body style="background-color:black;font-family:helvetica;color:white;">
 	
    <header style="max-width:960px;margin:auto;padding:2vw;">
+	   
+   <!-- Sometimes it's helpful to organize your page into sections.
+   My "header" section contains a title and some text. -->
+	   
+   <!-- Since I want my website to scale to different resolution screens, I often use "vw" (viewport width) for units.
+   I've told the header to never scale bigger than 960 pixels wide.
+   The "margin" outside the header will automatically fill in the rest of the space and center my content.
+   The "padding" sets space around the content inside of the header so that it won't touch the edge of the screen.
+   I've set the padding to 2% of the width of the viewport. -->
 
-         <p>
-            <span style="font-size:8vw;">joe<span style="color:tomato;">•</span>y 
-	    gua<span style="color:dodgerblue;">•</span>da<span style="color:gold;">•</span>gno</span>
+         <p style="font-size:8vw;">
+	    joe<span style="color:tomato;">•</span>y 
+	    gua<span style="color:dodgerblue;">•</span>da<span style="color:gold;">•</span>gno
 	 </p>
+	   
+	 <!-- "p" means paragraph and contains text. I'm using it for a title. -->
+	   
+         <!-- "span" is used to style text inline, eg make a few characters/words different instead of the whole paragraph.
+         Here I'm using it to add color. -->
 	
 	 <p>
 	    <br />
+		 
+	    <!-- "br" is a line break. 
+            There's probably cleaner ways of spacing my text, but it's a quick way to put a break between these paragraphs. -->
+		 
             <span style="font-size:2vw;">Hi. I'm Joey. This is my website. It's kind of a work in progress 
             right now, but it has some useful info.</span>
          </p>
