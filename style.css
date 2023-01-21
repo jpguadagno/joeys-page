@@ -34,3 +34,16 @@ p {
   margin: 0.5vw;
   text-align: justify;
 }
+
+#caption {
+  font-size: clamp(14px, 1.5vw, 56px);
+  margin: 0.5vw;
+  text-align: justify;
+}
+
+h1 {
+  font-size: clamp(32px, 3vw, 128px);
+  font-weight: normal;
+  margin: 0.5vw;
+  text-align: justify;
+}
