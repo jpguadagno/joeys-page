@@ -1,73 +1,148 @@
+body {
+  background-color: black;
+  font-family: georgia, serif;
+  font-size: 1em;
+  color: #eee;
+  margin: 5vh 5vw 5vh 5vw;
+}
+
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: white;
-  background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline solid #333;
 }
 
 a:visited {
   color: darkgrey;
-  background-color: transparent;
-  text-decoration: none;
+  text-decoration: black;
 }
 
 a:hover {
   color: dimgrey;
-  background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
   color: black;
-  background-color: transparent;
   text-decoration: none;
 }
 
-body {
-  background-color: black;
-  font-family: georgia, serif;
-  color: white;
-  margin: 0 10vw 0 10vw;
+hr {
+  border: 1px solid #333;
 }
 
 h1 {
-  font-size: clamp(32px, 3vw, 128px);
+  font-size: 6em;
   font-weight: normal;
-  margin: 0.5vw;
+  margin: 0 0 0.25em 0;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: normal;
+  margin: 0.5em 0 0.5em 0;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: normal;
+  margin: 0.5em 0 0.5em 0;
   text-align: justify;
 }
 
 p {
-  font-size: clamp(18px, 2vw, 72px);
-  margin: 0.5vw;
+  font-size: 2em;
+  margin: 1em 0 1em 0;
   text-align: justify;
 }
 
 .caption {
-  font-size: clamp(14px, 1.5vw, 56px);
-  margin: 0.5vw;
+  font-size: 1.75em;
+  margin: 0.5em 0 1.5em 0;
   text-align: justify;
+}
+
+.body {
+  margin-bottom:1.5em;
+}
+
+sup { 
+  vertical-align: top; font-size: 0.6em; 
 }
 
 .tweet {
   max-width: 720px;
   margin: auto;
-  margin-bottom:1vw;
-  padding-top: 1%;
-  padding-left: 2vw;
-  padding-bottom: 1vw;
-  padding-right: 2vw;
+  margin-bottom: 2vh;
+  padding: 2vh 2vw 2vh 2vw;
   border: 2px solid #222; 
   border-radius: 1vw;
 }
 
 .tweet p {
   font-family: Helvetica, Arial, sans-serif;
-  text-shadow:none;
+  font-size: 1.75em;
+  text-shadow: none;
   border-radius: 1vw;
   text-align: left;
+  margin: 0.5em;
+}
+
+.small {
+  font-size: 0.75em;
+  color: dimgrey;
 }
 
 .verified {
-  width: clamp(18px, 2vw, 72px);
+  width: 1em;
   margin-bottom: -.2em;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 2%;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 2%;
+  margin: 0;
+}
+
+.nav p {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .flex {
+    flex-flow: column;
+  }
+  .desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .caption {
+    font-size: 1.25em;
+  }
+  .tweet p {
+    font-size: 1em;
+  }
 }
