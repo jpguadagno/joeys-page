@@ -3,31 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>about / joey's page</title>
-<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<title>joey guadagno /writing/</title>
+<link href="" rel="stylesheet" type="text/css" media="all">
 
 <style>
-  p  { line-height: 1.5em; margin-bottom: 2em; }
-  h2 { font-size: 2em; }
-  h3 { font-weight: normal; color: #aaa; }
-  footer { font-size: 1em; }
+  body {
+    background: #000; 
+    color: #eee; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.5em;
+    margin: 5% 10%;
+    max-width: 720px; 
+  }
+
+  h1, h2, h3 {
+    font-weight: normal;
+    line-height: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-family: Times New Roman, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    line-height: 1.25em;
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  a:link {
+    text-decoration: underline 1px dotted;
+  }
+
+  a:hover {
+    color: #eee;
+    background: #999;
+    text-decoration: none;
+  }
+
+  .block {
+    display: inline-block;
+  }
+
+  .pronounce {
+    font-family: Times New Roman, serif;
+    font-size: 0.5em;
+    font-style: italic;
+  }
+
+  @media only screen and (max-width: 720px) {
+    p {
+      font-size: 16px;
+      line-height: 1.75em;
+    }
+  }
 </style>
 	
 </head>
 	
 <body>
 
-  <header style="width: 100%; line-height: 1ex;">
-    <h1 style="margin-bottom: 1em;">writing</h1>
-  </header>
+  <h1>
+    joey guadagno 
+    <span class="block pronounce">/<a href="index.html">home</a>/</span>
+  </h1>
 
-  <main style="width: 100%;">
-    <h2 style="margin-bottom: 0.25em;">
+    <h2>
       Lotuses in the Mud: House-Temples in Little Saigon
     </h2>
-    <h3 style="margin-bottom: 1.5em;">
-      excerpt &bull; written with Jacquelyn Do &bull; published in 
-      <a href="https://pidgin.press" target="_blank"><em>Pidgin 31</em></a>
+    <h3>
+      written with Jacquelyn Do <span class="block">and published in 
+      <a href="https://pidgin.press" target="_blank"><em>Pidgin 31</em></a></span>
     </h3>
     <p>
       <em>
@@ -67,24 +131,8 @@
       absence of existing temples or the resources to build them, the houses of local monks and 
       nuns provided a necessary alternative. 
     </p>
-    <p class="flex desktop" style="justify-content: space-between; align-content: space-between;">
-      <img src="images/text/temple2.jpg" alt="a statue of the Buddha surrounded by lush garden"
-        style="width: 49%; padding: 0 1% 1% 0;" />
-      <img src="images/text/temple3.jpg" alt="a living room altar"
-        style="width: 49%; padding: 0 0 1% 1%;" />
+    <p>
       <img src="images/text/temple4.jpg" alt="a covered patio altar"
-        style="width: 49%; padding: 1% 1% 0 0;" />
-      <img src="images/text/temple5.jpg" alt="a garage altar"
-        style="width: 49%; padding: 1% 0 0 1%;" />
-    </p>
-    <p class="mobile">
-      <img src="images/text/temple2.jpg" alt="a statue of the Buddha surrounded by lush garden"
-        style="width: 100%;" />
-      <img src="images/text/temple3.jpg" alt="a living room altar"
-        style="width: 100%;" />
-      <img src="images/text/temple4.jpg" alt="a covered patio altar"
-        style="width: 100%;" />
-      <img src="images/text/temple5.jpg" alt="a garage altar"
         style="width: 100%;" />
     </p>
     <p>
@@ -127,23 +175,10 @@
       </em>
     </p>
     <p style="color: #aaa; text-align: center;">
-      You can read the full article in 
+      You can read the full article in <span class="block">
       <a href="https://pidgin.press/breadcrumbs/lotuses-in-the-mudhouse-temples-in-little-saigon"
-      target="_blank"><em>Pidgin</em> Issue 31</a>.
+      target="_blank"><em>Pidgin</em> Issue 31</a>.</span>
     </p>
-  </main>
-
-  <footer style="width: 100%; text-align: center;">
-    <hr />
-    <br />
-    <h3 style="text-align: center;">
-      <a href="index.html">home</a>
-    </h3>
-    <br />
-    <p style="text-align: center;">
-      joey guadagno &copy; 2024
-    </p>
-  </footer>
 
 </body>
 	
