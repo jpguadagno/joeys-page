@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>joey guadagno /collage/</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+<style>
+  body {
+    background: #000; 
+    color: #eee; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 5%; 
+    overflow-x: hidden;
+  }
+main {
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+	html, body, main, .gallery-container {
+    scrollbar-width: none;       
+    -ms-overflow-style: none;    
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main::-webkit-scrollbar,
+.gallery-container::-webkit-scrollbar{
+    display: none;              
+}
+img{
+	height: 180px;
+	float: left;
+	position: relative;
+}
+
+  h1, h2, h3 {
+    font-weight: normal;
+    line-height: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-family: Times New Roman, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: #aaa;
+    font-family: Times New Roman, serif;
+    font-size: 1.25em;
+    font-style: italic;
+    margin: 1.5em, 0;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  a:link {
+    text-decoration: underline 1px dotted;
+  }
+
+  a:hover {
+    color: #eee;
+    background: #999;
+    text-decoration: none;
+  }
+
+  .block {
+    display: inline-block;
+  }
+
+  .pronounce {
+    font-family: Times New Roman, serif;
+    font-size: 0.5em;
+    font-style: italic;
+  }
+
+  em {
+    font-family: Times New Roman, serif;
+    font-size: 1.1em;
+    font-style: italic;
+  }
+
+  strong {
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+
+  details > p {
+    max-width: 720px;
+  }
+
+summary {
+        padding-bottom: 0.5em;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+div.gallery-container {
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	gap: 0rem;
+	width: 100%;
+	height: auto;
+	padding-bottom: 3rem;
+}
+div.gallery {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	width: 320px;
+	box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        margin-right: 2rem;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	border: solid 0px;
+	max-width: 100%;
+	padding: 0;
+	margin: 0.7rem 0 0 0;
+	font-size: 0.8em;
+	line-height: 1.2rem;
+}
+
+
+</style>
+</head>
+
+<body>
+  <main>
+
+  <h1>
+    collage
+    <span class="block pronounce">
+      /<a href="https://joeys.page">home</a>/
+    </span>
+  </h1>
+
+  <h2>featured work</h2>
+    <div class="gallery-container">
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/16.jpg">
+        <div class="desc">
+          <strong>Memphis Blue</strong>
+          <br>
+          6"x4", magazine and pencil on watercolor paper
+          <br>
+          2025
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/07.jpg">
+        <div class="desc">
+          <strong>Shulman's Treehouse No. 1</strong>
+          <br>
+          9"x12", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+      <div class="gallery" style="width: 480px;"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/08.jpg">
+        <div class="desc">
+          <strong>Shulman's Treehouse No. 2</strong>
+          <br>
+          12"x9", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/19.jpg">
+        <div class="desc">
+          <strong>Cathedral in 5 pieces</strong>
+          <br>
+          Digital composition
+          <br>
+          2025
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/18.jpg">
+        <div class="desc">
+          <strong>Cenotaph of Frank Gehry</strong>
+          <br>
+          Digital composition
+          <br>
+          2025
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/17.jpg">
+        <div class="desc">
+          <strong>House on a Hillside</strong>
+          <br>
+          12"x9", magazine on Bristol
+          <br>
+          2025
+        </div>
+      </div>
+    </div>
+
+  <details>
+    <summary><em>Dezeen</em> series (2024)</summary>
+    <p>
+      This series was sourced from featured articles on <i>Dezeen</i>.
+      My attempt to reduce ink consumption and save a few bucks led to unintentional color distortions,
+      giving the collages a soft and sometimes exaggerated palette. 
+    </p>
+    <div class="gallery-container">
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/09.jpg">
+        <div class="desc">
+          <strong>May Day</strong>
+          <br>
+          9"x12", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/13.jpg">
+        <div class="desc">
+          <strong>Civic Center</strong>
+          <br>
+          9"x12", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/15.jpg">
+        <div class="desc">
+          <strong>Monolith</strong>
+          <br>
+          9"x12", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/14.jpg">
+        <div class="desc">
+          <strong>Cabinessence</strong>
+          <br>
+          12"x9", inkjet print on Bristol
+          <br>
+          2024
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><em>Gospel Swamp</em> (2023)</summary>
+    <p>
+      This series was produced for my master's thesis, <a href="../portfolio/thesis.html">Gospel Swamp</a>.
+      Combining my own site photos with local archival photos and architectural precedents, these collages
+      pull from the past and present, near and far, to imagine a future of the city.
+    </p>
+    <div class="gallery-container">
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/01.jpg">
+        <div class="desc">
+          <strong>Towards a Future</strong>
+          <br>
+          17"x11", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery" style="width: 480px;"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/06.jpg">
+        <div class="desc">
+          <strong>Paseo Architectures</strong>
+          <br>
+          34"x22", laser print on watercolor
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/02.jpg">
+        <div class="desc">
+          <strong>In my backyard</strong>
+          <br>
+          17"x11", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/03.jpg">
+        <div class="desc">
+          <strong>Threshold Study No. 1</strong>
+          <br>
+          17"x14", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/04.jpg">
+        <div class="desc">
+          <strong>Threshold Study No. 2</strong>
+          <br>
+          17"x14", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/05.jpg">
+        <div class="desc">
+          <strong>Threshold Study No. 3</strong>
+          <br>
+          17"x14", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+    </div>
+  </details>
+
+      
+  <details>
+    <summary><em>Instant Architecture</em> (2023)</summary>
+    <p>
+      Each of the pieces in this series was created in less than an hour, 
+      combining sources chosen by the instructor. 
+      They are experiments in rapid collage-making, honing an intentionality 
+      based on instincts or impulses.
+    </p>
+    <div class="gallery-container">
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/10.jpg">
+        <div class="desc">
+          <strong>Instant Architecture No. 1</strong>
+          <br>
+          17"x14", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/11.jpg">
+        <div class="desc">
+          <strong>Instant Architecture No. 2</strong>
+          <br>
+          17"x14", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+      <div class="gallery"> 
+        <img src="https://itsonlyjoey.neocities.org/images/collages/12.jpg">
+        <div class="desc">
+          <strong>Instant Architecture No. 3</strong>
+          <br>
+          14"x17", laser print on Bristol
+          <br>
+          2023
+        </div>
+      </div>
+    </div>
+  </details>
+	
+</main>
+</body>
+</html>
